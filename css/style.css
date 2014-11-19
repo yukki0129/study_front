@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	color: pink;
+}
+
+#backImg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+#back_bar {
+	position:absolute;
+	bottom:148px;
+	left:0px;
+	z-index:3;
+}
+
+#back_station {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index:2;
+}
+
+#back_building {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	z-index:1;
+}
