@@ -1,7 +1,9 @@
 function init() {
-  
+
 }
 
+/* canvas test */
+/*
 function drawCircle() {
   var canvas = document.getElementById("circleField");
 
@@ -60,3 +62,4 @@ function drawCircle() {
     context.fill();
   }
 }
+*/
