@@ -3,12 +3,6 @@ body {
 	padding: 0;
 }
 
-p {
-	position: relative;
-	color: pink;
-	z-index: 100;
-}
-
 #header {
 	position: fixed;
 	background-color: white;
@@ -26,9 +20,20 @@ p {
 
 #footer {
 	position: relative;
-	background-color: gray;
+	height: 60px;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
 	bottom: 0px;
 	z-index: 999;
+}
+
+#main {
+	position: relative;
+	top: 100px;
+	height: 100%;
+	width: 100%;
+	z-index: 50;
 }
 
 #bubbleCanvas {
@@ -52,6 +57,14 @@ p {
 	left: 0px;
 	height: 100%;
 	width: 300px;
+}
+
+#bubbleCanvasTimer {
+	position: relative;
+	top: -50px;
+	left: 0px;
+	height: 300px;
+	width: 700px;
 }
 
 #backImg {
@@ -80,4 +93,13 @@ p {
 	bottom: 0px;
 	left: 0px;
 	z-index: 1;
+}
+
+#dhm {
+	position: relative;
+	top: -230px;
+	color: white;
+	font-size: 35;
+	font-family: monospace;
+	z-index: 70;
 }

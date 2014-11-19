@@ -1,7 +1,37 @@
 var bubbles = [];
+var cntTimer;
+
+var dhm = document.getElementById("dhm");
 
 function init() {
+	countDown();
+	timerStart();
 	bubbleStart();
+}
+
+function timerStart() {
+	cntTimer = setInterval("countDown()", 1000 * 60);
+}
+
+function countDown() {
+
+	var endDateTime 　= new Date(2014, 11, 1, 17, 0, 0, 0);	
+	var startDateTime = new Date();
+	var left = endDateTime - startDateTime;
+	var a_day = 24 * 60 * 60 * 1000;
+	
+	if(left < 0) {
+		left = 0;
+		clearInterval(cntTimer);
+	}
+	
+	var d = Math.floor(left / a_day);
+	var h = Math.floor((left % a_day) / (60 * 60 * 1000));
+	var m = Math.floor((left % a_day) / (60 * 1000)) % 60;
+	// var s = Math.floor((left % a_day) / 1000) % 60 % 60;
+
+	document.getElementById("dhm").textContent = d + "　　:　" + h + "　:　" + m;
+
 }
 
 function bubbleStart() {
@@ -37,7 +67,7 @@ function bubbleMake() {
 
 function bubbleMove() {
 	var yPos = parseInt(bubbles[0].top);
-	console.log(bubbles[0]);
+	// console.log(bubbles[0]);
 	bubbles[0].top = yPos + 10 + 'px';
 	setTimeout("bubbleMove()", 500);
 }
