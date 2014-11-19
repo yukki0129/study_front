@@ -17,7 +17,10 @@ p {
 	width: 100%;
 }
 
-.header {
+.headerLogo {
+	height: 50px;
+	width: 100%;
+	display: table-cell;
 	vertical-align: middle;
 }
 
@@ -28,14 +31,27 @@ p {
 	z-index: 999;
 }
 
+#bubbleCanvas {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+
 #bubbleCanvasRight {
 	position: fixed;
-	z-index: 10;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 300px;
 }
 
 #bubbleCanvasLeft {
 	position: fixed;
-	z-index: 10;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 300px;
 }
 
 #backImg {
