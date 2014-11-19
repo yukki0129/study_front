@@ -3,33 +3,56 @@ body {
 	padding: 0;
 }
 
+#header {
+	position: fixed;
+	background-color: white;
+	z-index: 1000;
+	height: 50px;
+}
+
+#footer {
+	position: relative;
+	background-color: gray;
+	bottom: 0px;
+	z-index: 50;
+}
+
 p {
+	position: relative;
 	color: pink;
+	z-index: 100;
+}
+
+#cav {
+	position: absolute;
+	background-color: gray;
+	z-index: 10;
 }
 
 #backImg {
 	position: fixed;
 	height: 100%;
 	width: 100%;
+	z-index: 0;
 }
 
 #back_bar {
-	position:absolute;
-	bottom:148px;
-	left:0px;
-	z-index:3;
+	position: absolute;
+	bottom: 148px;
+	left: 0px;
+	z-index: 3;
 }
 
 #back_station {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	z-index:2;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
 }
 
 #back_building {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	z-index:1;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
 }
