@@ -12,10 +12,19 @@ body {
 }
 
 .headerLogo {
+	
+	float: left;
 	height: 50px;
-	width: 100%;
-	display: table-cell;
-	vertical-align: middle;
+	padding-top: 11px;
+	
+}
+
+#year100{
+	float: right;
+}
+
+.clear{
+	clear: both;
 }
 
 #footer {
